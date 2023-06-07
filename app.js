@@ -8,4 +8,4 @@ app.get('/', (request, response) => {
 })
 
 
-app.listen(PORT, () => `Listening for request on http://localhost:${PORT}`)
+app.listen(PORT, () => console.log(`Listening for request on http://localhost:${PORT}`))
