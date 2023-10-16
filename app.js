@@ -8,4 +8,9 @@ app.get('/', (request, response) => {
 })
 
 
+app.get('/date', (request, response) => {
+    response.json({today: new Date()})
+})
+
+
 app.listen(PORT, () => console.log(`Listening for request on http://localhost:${PORT}`))
